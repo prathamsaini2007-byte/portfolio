@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;family=Manrope:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "secondary-container": "#00687a",
+                      "on-primary-fixed-variant": "#1a0099",
+                      "outline-variant": "#40485d",
+                      "error-container": "#a70138",
+                      "tertiary": "#ec63ff",
+                      "tertiary-fixed-dim": "#ef6eff",
+                      "surface-bright": "#1f2b49",
+                      "on-tertiary-fixed": "#300038",
+                      "primary-fixed-dim": "#8885ff",
+                      "outline": "#6d758c",
+                      "on-secondary": "#004b58",
+                      "on-primary": "#1c00a0",
+                      "secondary-dim": "#40ceed",
+                      "on-tertiary": "#3d0047",
+                      "error": "#ff6e84",
+                      "primary-fixed": "#9795ff",
+                      "surface-container-highest": "#192540",
+                      "on-error-container": "#ffb2b9",
+                      "surface-container-low": "#091328",
+                      "surface-container-high": "#141f38",
+                      "primary": "#a7a5ff",
+                      "secondary-fixed": "#65e1ff",
+                      "error-dim": "#d73357",
+                      "on-secondary-fixed": "#003a45",
+                      "inverse-surface": "#faf8ff",
+                      "tertiary-container": "#de4bf4",
+                      "on-surface-variant": "#a3aac4",
+                      "primary-dim": "#645efb",
+                      "surface-container-lowest": "#000000",
+                      "tertiary-fixed": "#f487ff",
+                      "inverse-on-surface": "#4d556b",
+                      "surface-container": "#0f1930",
+                      "on-background": "#dee5ff",
+                      "on-error": "#490013",
+                      "surface-dim": "#060e20",
+                      "on-secondary-container": "#ecfaff",
+                      "tertiary-dim": "#ec63ff",
+                      "secondary-fixed-dim": "#48d4f3",
+                      "on-tertiary-container": "#19001e",
+                      "surface-variant": "#192540",
+                      "surface-tint": "#a7a5ff",
+                      "inverse-primary": "#4e45e4",
+                      "surface": "#060e20",
+                      "on-secondary-fixed-variant": "#005969",
+                      "secondary": "#53ddfc",
+                      "on-primary-container": "#14007e",
+                      "on-surface": "#dee5ff",
+                      "on-tertiary-fixed-variant": "#660075",
+                      "background": "#060e20",
+                      "primary-container": "#9795ff",
+                      "on-primary-fixed": "#000000"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.125rem",
+                      "lg": "0.25rem",
+                      "xl": "0.5rem",
+                      "full": "0.75rem"
+              },
+              "fontFamily": {
+                      "headline": ["Space Grotesk"],
+                      "body": ["Manrope"],
+                      "label": ["Manrope"]
+              }
+            },
+          },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body {
+            background-color: #060e20;
+            color: #dee5ff;
+            font-family: 'Manrope', sans-serif;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background text-on-surface min-h-screen pb-24 md:pb-0 md:pt-16">
+<!-- TopAppBar -->
+<header class="fixed top-0 w-full z-50 bg-[#060e20]/60 backdrop-blur-xl flex justify-between items-center px-6 h-16 w-full">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[#a7a5ff]" data-icon="neurology">neurology</span>
+<span class="text-xl font-bold tracking-tighter text-[#dee5ff] font-['Space_Grotesk']">Pratham Saini</span>
+</div>
+<div class="hidden md:flex gap-8 items-center">
+<a class="text-[#dee5ff]/70 font-['Manrope'] text-sm font-semibold uppercase tracking-widest hover:opacity-80 transition-opacity" href="#">Home</a>
+<a class="text-[#a7a5ff] font-['Manrope'] text-sm font-semibold uppercase tracking-widest hover:opacity-80 transition-opacity" href="#">Skills</a>
+<a class="text-[#dee5ff]/70 font-['Manrope'] text-sm font-semibold uppercase tracking-widest hover:opacity-80 transition-opacity" href="#">Projects</a>
+<a class="text-[#dee5ff]/70 font-['Manrope'] text-sm font-semibold uppercase tracking-widest hover:opacity-80 transition-opacity" href="#">About</a>
+</div>
+<button class="hover:opacity-80 transition-opacity active:scale-95 duration-200">
+<span class="material-symbols-outlined text-[#a7a5ff]" data-icon="translate">translate</span>
+</button>
+</header>
+<main class="max-w-7xl mx-auto px-6 pt-12">
+<!-- Hero Section -->
+<section class="py-12 md:py-24">
+<div class="max-w-3xl">
+<h1 class="font-headline text-5xl md:text-7xl font-bold tracking-tight text-on-surface mb-6 leading-tight">
+                    Cognitive <span class="text-primary">Stack</span>
+</h1>
+<p class="font-body text-lg md:text-xl text-on-surface-variant leading-relaxed">
+                    A curated assembly of neural architectures, programming paradigms, and mathematical foundations used to build the next generation of artificial intelligence.
+                </p>
+</div>
+</section>
+<!-- Bento Grid Skills -->
+<section class="grid grid-cols-1 md:grid-cols-12 gap-6 mb-24">
+<!-- AI & Machine Learning - Large Card -->
+<div class="md:col-span-8 bg-surface-container-low rounded-xl p-8 flex flex-col justify-between min-h-[400px]">
+<div>
+<div class="flex items-center gap-3 mb-6">
+<span class="material-symbols-outlined text-tertiary" data-icon="psychology">psychology</span>
+<h2 class="font-headline text-2xl font-bold uppercase tracking-widest text-on-surface">Neural Architectures</h2>
+</div>
+<div class="flex flex-wrap gap-3">
+<span class="px-4 py-2 bg-secondary-container text-on-secondary-container rounded-full text-sm font-bold font-label">Transformers</span>
+<span class="px-4 py-2 bg-secondary-container text-on-secondary-container rounded-full text-sm font-bold font-label">Large Language Models</span>
+<span class="px-4 py-2 bg-secondary-container text-on-secondary-container rounded-full text-sm font-bold font-label">Diffusion Models</span>
+<span class="px-4 py-2 bg-secondary-container text-on-secondary-container rounded-full text-sm font-bold font-label">CNNs</span>
+<span class="px-4 py-2 bg-secondary-container text-on-secondary-container rounded-full text-sm font-bold font-label">Reinforcement Learning</span>
+<span class="px-4 py-2 bg-secondary-container text-on-secondary-container rounded-full text-sm font-bold font-label">GNNs</span>
+<span class="px-4 py-2 bg-secondary-container text-on-secondary-container rounded-full text-sm font-bold font-label">Autoencoders</span>
+</div>
+</div>
+<div class="mt-12 grid grid-cols-2 md:grid-cols-4 gap-4">
+<div class="p-4 bg-surface-container-high rounded-lg">
+<p class="text-tertiary font-headline text-3xl font-bold tracking-tighter">98%</p>
+<p class="text-on-surface-variant text-xs uppercase font-bold mt-1">Accuracy Meta</p>
+</div>
+<div class="p-4 bg-surface-container-high rounded-lg">
+<p class="text-primary font-headline text-3xl font-bold tracking-tighter">24+</p>
+<p class="text-on-surface-variant text-xs uppercase font-bold mt-1">Models Deployed</p>
+</div>
+</div>
+</div>
+<!-- Languages - Side Card -->
+<div class="md:col-span-4 bg-surface-container-high rounded-xl p-8 border-l-4 border-primary">
+<div class="flex items-center gap-3 mb-8">
+<span class="material-symbols-outlined text-primary" data-icon="terminal">terminal</span>
+<h2 class="font-headline text-2xl font-bold uppercase tracking-widest text-on-surface">Languages</h2>
+</div>
+<ul class="space-y-6">
+<li class="flex justify-between items-center group">
+<span class="font-headline font-medium text-lg">Python</span>
+<div class="h-1 w-24 bg-surface-container-highest rounded-full overflow-hidden">
+<div class="h-full bg-primary w-[95%]"></div>
+</div>
+</li>
+<li class="flex justify-between items-center group">
+<span class="font-headline font-medium text-lg">C++</span>
+<div class="h-1 w-24 bg-surface-container-highest rounded-full overflow-hidden">
+<div class="h-full bg-primary w-[80%]"></div>
+</div>
+</li>
+<li class="flex justify-between items-center group">
+<span class="font-headline font-medium text-lg">TypeScript</span>
+<div class="h-1 w-24 bg-surface-container-highest rounded-full overflow-hidden">
+<div class="h-full bg-primary w-[85%]"></div>
+</div>
+</li>
+<li class="flex justify-between items-center group">
+<span class="font-headline font-medium text-lg">Julia</span>
+<div class="h-1 w-24 bg-surface-container-highest rounded-full overflow-hidden">
+<div class="h-full bg-primary w-[65%]"></div>
+</div>
+</li>
+<li class="flex justify-between items-center group">
+<span class="font-headline font-medium text-lg">Rust</span>
+<div class="h-1 w-24 bg-surface-container-highest rounded-full overflow-hidden">
+<div class="h-full bg-primary w-[70%]"></div>
+</div>
+</li>
+</ul>
+</div>
+<!-- Frameworks - Bottom Card 1 -->
+<div class="md:col-span-6 bg-surface-container-low rounded-xl p-8 relative overflow-hidden group">
+<div class="relative z-10">
+<div class="flex items-center gap-3 mb-6">
+<span class="material-symbols-outlined text-secondary" data-icon="deployed_code">deployed_code</span>
+<h2 class="font-headline text-2xl font-bold uppercase tracking-widest text-on-surface">Frameworks</h2>
+</div>
+<div class="grid grid-cols-2 gap-4">
+<div class="flex items-center gap-3 p-3 bg-surface-container-highest rounded-lg transition-transform group-hover:scale-105">
+<div class="w-8 h-8 rounded-md bg-primary/20 flex items-center justify-center">
+<span class="material-symbols-outlined text-primary text-sm" data-icon="category">category</span>
+</div>
+<span class="font-body font-semibold">PyTorch</span>
+</div>
+<div class="flex items-center gap-3 p-3 bg-surface-container-highest rounded-lg transition-transform group-hover:scale-105">
+<div class="w-8 h-8 rounded-md bg-primary/20 flex items-center justify-center">
+<span class="material-symbols-outlined text-primary text-sm" data-icon="category">category</span>
+</div>
+<span class="font-body font-semibold">TensorFlow</span>
+</div>
+<div class="flex items-center gap-3 p-3 bg-surface-container-highest rounded-lg transition-transform group-hover:scale-105">
+<div class="w-8 h-8 rounded-md bg-primary/20 flex items-center justify-center">
+<span class="material-symbols-outlined text-primary text-sm" data-icon="category">category</span>
+</div>
+<span class="font-body font-semibold">HuggingFace</span>
+</div>
+<div class="flex items-center gap-3 p-3 bg-surface-container-highest rounded-lg transition-transform group-hover:scale-105">
+<div class="w-8 h-8 rounded-md bg-primary/20 flex items-center justify-center">
+<span class="material-symbols-outlined text-primary text-sm" data-icon="category">category</span>
+</div>
+<span class="font-body font-semibold">LangChain</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Tooling - Bottom Card 2 -->
+<div class="md:col-span-6 bg-surface-container-highest rounded-xl p-8">
+<div class="flex items-center gap-3 mb-6">
+<span class="material-symbols-outlined text-[#dee5ff]" data-icon="settings_b_roll">settings_b_roll</span>
+<h2 class="font-headline text-2xl font-bold uppercase tracking-widest text-on-surface">DevOps &amp; Cloud</h2>
+</div>
+<div class="flex flex-wrap gap-4">
+<div class="flex items-center gap-2 text-on-surface-variant font-label text-sm bg-surface-container-low px-4 py-2 rounded-lg">
+<span class="material-symbols-outlined text-xs" data-icon="cloud">cloud</span> AWS Sagemaker
+                    </div>
+<div class="flex items-center gap-2 text-on-surface-variant font-label text-sm bg-surface-container-low px-4 py-2 rounded-lg">
+<span class="material-symbols-outlined text-xs" data-icon="box">box</span> Docker
+                    </div>
+<div class="flex items-center gap-2 text-on-surface-variant font-label text-sm bg-surface-container-low px-4 py-2 rounded-lg">
+<span class="material-symbols-outlined text-xs" data-icon="hub">hub</span> Kubernetes
+                    </div>
+<div class="flex items-center gap-2 text-on-surface-variant font-label text-sm bg-surface-container-low px-4 py-2 rounded-lg">
+<span class="material-symbols-outlined text-xs" data-icon="database">database</span> Pinecone DB
+                    </div>
+<div class="flex items-center gap-2 text-on-surface-variant font-label text-sm bg-surface-container-low px-4 py-2 rounded-lg">
+<span class="material-symbols-outlined text-xs" data-icon="monitoring">monitoring</span> Weights &amp; Biases
+                    </div>
+</div>
+</div>
+</section>
+<!-- Résumé Section -->
+<section class="mb-24 relative">
+<div class="bg-surface-container-low rounded-3xl overflow-hidden p-8 md:p-16 flex flex-col md:flex-row items-center gap-12">
+<div class="flex-1 order-2 md:order-1">
+<h2 class="font-headline text-4xl md:text-5xl font-bold tracking-tight text-on-surface mb-6">
+                        Curriculum <span class="text-tertiary">Vitae</span>
+</h2>
+<p class="font-body text-on-surface-variant text-lg mb-10 leading-relaxed max-w-xl">
+                        A detailed trajectory of my academic research, industry experience, and technical contributions in the field of Machine Learning. Available for download in PDF format.
+                    </p>
+<div class="flex flex-wrap gap-4">
+<button class="bg-primary text-on-primary px-8 py-4 rounded-xl font-bold flex items-center gap-3 hover:opacity-90 transition-opacity">
+<span class="material-symbols-outlined" data-icon="download">download</span>
+                            Download Full PDF
+                        </button>
+<button class="bg-surface-container-highest text-on-surface px-8 py-4 rounded-xl font-bold flex items-center gap-3 border border-outline-variant/30 hover:bg-surface-container-high transition-colors">
+<span class="material-symbols-outlined" data-icon="visibility">visibility</span>
+                            Full Screen Preview
+                        </button>
+</div>
+</div>
+<div class="flex-1 order-1 md:order-2 w-full md:w-auto">
+<div class="relative group">
+<div class="absolute -inset-4 bg-primary/10 blur-3xl rounded-full opacity-50 group-hover:opacity-100 transition-opacity"></div>
+<div class="relative bg-surface-container-highest p-4 rounded-2xl shadow-2xl transform md:rotate-2 group-hover:rotate-0 transition-transform duration-500">
+<img alt="CV Preview" class="w-full h-auto rounded-lg shadow-inner grayscale group-hover:grayscale-0 transition-all duration-700" data-alt="Modern professional resume document with clean layout, typography, and minimalist design aesthetic in a studio lighting setting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCEvm17lUfWJIQ656gI_XNqryksR7jTz-Hz7tUZJ9BkdbCJldEu4cxnBTM_v9Eln6cypJhRW6iWduWBqbdbEM09mq8ySHyEgeRL2LskcW6VVYCUloPnBK3vpDU-bJXhudKjmnF0ZsljWeDl3yq1YW9EEIoG7T8xp5zNyCI68Krh-bHoc7K8Fevf8NX_U_2IYAVhSMO00uQLihc4XSIg579h4njL0wLKR8WYrmACOOh5XNiXqvw6Xu8GpdFaiNzABKuDHAzisqwDfrM"/>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- BottomNavBar (Mobile Only) -->
+<nav class="md:hidden fixed bottom-0 left-0 w-full flex justify-around items-center px-4 py-3 pb-safe bg-[#060e20]/80 backdrop-blur-md z-50">
+<a class="flex flex-col items-center justify-center text-[#dee5ff]/50 active:scale-90 transition-transform" href="#">
+<span class="material-symbols-outlined" data-icon="home">home</span>
+<span class="font-['Manrope'] text-[10px] font-semibold uppercase tracking-widest mt-1">Home</span>
+</a>
+<a class="flex flex-col items-center justify-center bg-[#141f38] text-[#a7a5ff] rounded-xl px-3 py-1 active:scale-90 transition-transform" href="#">
+<span class="material-symbols-outlined" data-icon="psychology">psychology</span>
+<span class="font-['Manrope'] text-[10px] font-semibold uppercase tracking-widest mt-1">Skills</span>
+</a>
+<a class="flex flex-col items-center justify-center text-[#dee5ff]/50 active:scale-90 transition-transform" href="#">
+<span class="material-symbols-outlined" data-icon="code_blocks">code_blocks</span>
+<span class="font-['Manrope'] text-[10px] font-semibold uppercase tracking-widest mt-1">Projects</span>
+</a>
+<a class="flex flex-col items-center justify-center text-[#dee5ff]/50 active:scale-90 transition-transform" href="#">
+<span class="material-symbols-outlined" data-icon="account_circle">account_circle</span>
+<span class="font-['Manrope'] text-[10px] font-semibold uppercase tracking-widest mt-1">About</span>
+</a>
+</nav>
+</body></html>
