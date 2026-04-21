@@ -1,13 +1,21 @@
 <!DOCTYPE html>
 
-<html class="dark" lang="en"><head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;family=Manrope:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
-<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-<script id="tailwind-config">
+<html class="dark" lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;family=Manrope:wght@300;400;500;600;700&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script id="tailwind-config">
         tailwind.config = {
             darkMode: "class",
             theme: {
@@ -80,187 +88,239 @@
             },
         }
     </script>
-<style>
+    <style>
         .material-symbols-outlined {
             font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
         }
+
         .glass-effect {
             backdrop-filter: blur(12px);
         }
+
         body {
             background-color: #060e20;
             color: #dee5ff;
             font-family: 'Manrope', sans-serif;
         }
     </style>
-<style>
-    body {
-      min-height: max(884px, 100dvh);
-    }
-  </style>
+    <style>
+        body {
+            min-height: max(884px, 100dvh);
+        }
+    </style>
 </head>
+
 <body class="bg-background text-on-background selection:bg-primary/30">
-<!-- TopAppBar -->
-<nav class="fixed top-0 w-full z-50 bg-slate-950/60 backdrop-blur-xl">
-<div class="flex justify-between items-center px-6 py-4 max-w-7xl mx-auto">
-<div class="flex items-center gap-3">
-<span class="material-symbols-outlined text-indigo-400 text-2xl" data-icon="memory">memory</span>
-<span class="text-2xl font-bold tracking-tighter text-indigo-400 font-['Space_Grotesk']">PRATHAM SAINI</span>
-</div>
-<div class="hidden md:flex items-center gap-8 font-['Space_Grotesk']">
-<a class="text-slate-400 hover:text-indigo-300 transition-colors" href="#">Home</a>
-<a class="text-slate-400 hover:text-indigo-300 transition-colors" href="#">Skills</a>
-<a class="text-slate-400 hover:text-indigo-300 transition-colors" href="#">Projects</a>
-<a class="text-indigo-400 font-bold hover:text-indigo-300 transition-colors" href="#">About</a>
-</div>
-<div class="flex items-center gap-4">
-<span class="text-indigo-400 font-['Space_Grotesk'] tracking-tight cursor-pointer scale-95-on-click transition-transform">HI/EN</span>
-</div>
-</div>
-</nav>
-<main class="pt-24 pb-32 max-w-7xl mx-auto px-6">
-<!-- Hero Section: Editorial Asymmetry -->
-<section class="grid grid-cols-1 md:grid-cols-12 gap-12 mb-32 items-end">
-<div class="md:col-span-8">
-<span class="text-tertiary font-headline font-medium tracking-widest label-md block mb-4 uppercase">System Identity // 01</span>
-<h1 class="text-6xl md:text-8xl font-headline font-bold text-on-surface tracking-tighter leading-none mb-8">
-                    Synthesizing <br/> <span class="text-primary-dim">Intelligent</span> Systems.
+    <!-- TopAppBar -->
+    <nav class="fixed top-0 w-full z-50 bg-slate-950/60 backdrop-blur-xl">
+        <div class="flex justify-between items-center px-6 py-4 max-w-7xl mx-auto">
+            <div class="flex items-center gap-3">
+                <span class="material-symbols-outlined text-indigo-400 text-2xl" data-icon="memory">memory</span>
+                <span class="text-2xl font-bold tracking-tighter text-indigo-400 font-['Space_Grotesk']">PRATHAM
+                    SAINI</span>
+            </div>
+            <div class="hidden md:flex items-center gap-8 font-['Space_Grotesk']">
+                <a class="text-slate-400 hover:text-indigo-300 transition-colors" href="#">Home</a>
+                <a class="text-slate-400 hover:text-indigo-300 transition-colors" href="#">Skills</a>
+                <a class="text-slate-400 hover:text-indigo-300 transition-colors" href="#">Projects</a>
+                <a class="text-indigo-400 font-bold hover:text-indigo-300 transition-colors" href="#">About</a>
+            </div>
+            <div class="flex items-center gap-4">
+                <span
+                    class="text-indigo-400 font-['Space_Grotesk'] tracking-tight cursor-pointer scale-95-on-click transition-transform">HI/EN</span>
+            </div>
+        </div>
+    </nav>
+    <main class="pt-24 pb-32 max-w-7xl mx-auto px-6">
+        <!-- Hero Section: Editorial Asymmetry -->
+        <section class="grid grid-cols-1 md:grid-cols-12 gap-12 mb-32 items-end">
+            <div class="md:col-span-8">
+                <span
+                    class="text-tertiary font-headline font-medium tracking-widest label-md block mb-4 uppercase">System
+                    Identity // 01</span>
+                <h1
+                    class="text-6xl md:text-8xl font-headline font-bold text-on-surface tracking-tighter leading-none mb-8">
+                    Synthesizing <br /> <span class="text-primary-dim">Intelligent</span> Systems.
                 </h1>
-<p class="text-body-lg text-on-surface-variant max-w-xl leading-relaxed">
-                    A multi-disciplinary researcher and developer focused on the intersection of cognitive architecture and scalable neural networks. Currently architecting high-fidelity solutions for complex data ecosystems.
+                <p class="text-body-lg text-on-surface-variant max-w-xl leading-relaxed">
+                    A multi-disciplinary researcher and developer focused on the intersection of cognitive architecture
+                    and scalable neural networks. Currently architecting high-fidelity solutions for complex data
+                    ecosystems.
                 </p>
-</div>
-<div class="md:col-span-4 flex justify-end">
-<div class="w-full aspect-square bg-surface-container-high rounded-xl overflow-hidden relative group">
-<img alt="Lead Researcher Profile" class="w-full h-full object-cover group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-700" data-alt="Close-up professional portrait of a tech professional in low-key lighting with subtle blue and indigo rim light on dark background" src="https://lh3.googleusercontent.com/aida/ADBb0ujcR8Vw3Nij8ixI387cIQGgqNnQ1RHjb-MxbgUVpEYre0BF36qpg0uykrJrE224OVMUyIsMGnwTOBKkl--DjVlYLeXq9uEdRRqhVlv_ztVzh8wVuKWw2Cx4DgehKCXehkvTcIzr7tE8GKUM6nnhYM2IL31JgQgns0h5FWNIFKQBhRWy0zUlI6J7txr6KzcDwJP9mUhNFvqFwtoEyVqpeSB3oQ7PAyg__Vz8my7eHNZ5x6QBGqc1lJhSmVYtB3-ui5V-DDbohTbBLg"/>
-<div class="absolute inset-0 bg-gradient-to-t from-background/80 to-transparent"></div>
-</div>
-</div>
-</section>
-<!-- Education Section: Tonal Stacking -->
-<section class="mb-32 bg-surface-container-low rounded-[2rem] p-8 md:p-16">
-<div class="grid grid-cols-1 md:grid-cols-12 gap-12">
-<div class="md:col-span-4">
-<h2 class="text-4xl font-headline font-bold text-on-surface mb-4">Neural <br/>Foundations</h2>
-<p class="text-on-surface-variant">Academic trajectory and specialized certifications.</p>
-</div>
-<div class="md:col-span-8 space-y-8">
-<div class="bg-surface-container-high p-8 rounded-2xl relative overflow-hidden group">
-<div class="absolute top-0 right-0 p-6 opacity-10 group-hover:opacity-20 transition-opacity">
-<span class="material-symbols-outlined text-8xl" data-icon="school">school</span>
-</div>
-<div class="flex flex-col md:flex-row md:items-center justify-between gap-4 mb-6">
-<div>
-<h3 class="text-2xl font-headline font-bold text-primary">Manav Rachna University</h3>
-<p class="text-on-surface-variant">Bachelor of Technology in Computer Science &amp; Engineering</p>
-</div>
-<span class="px-4 py-1 bg-surface-container-highest text-secondary text-sm font-bold rounded-full self-start">2020 — 2024</span>
-</div>
-<div class="grid grid-cols-1 sm:grid-cols-2 gap-6 text-sm text-on-surface-variant">
-<ul class="space-y-2">
-<li class="flex items-center gap-2"><span class="w-1.5 h-1.5 bg-tertiary rounded-full"></span> Specialization: Artificial Intelligence &amp; ML</li>
-<li class="flex items-center gap-2"><span class="w-1.5 h-1.5 bg-tertiary rounded-full"></span> Research Focus: Neural Architecture Search</li>
-</ul>
-<ul class="space-y-2">
-<li class="flex items-center gap-2"><span class="w-1.5 h-1.5 bg-tertiary rounded-full"></span> GPA: 9.2/10.0</li>
-<li class="flex items-center gap-2"><span class="w-1.5 h-1.5 bg-tertiary rounded-full"></span> Dean's Merit List Recipient</li>
-</ul>
-</div>
-</div>
-<div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-<div class="bg-surface-container rounded-xl p-6 hover:bg-surface-container-highest transition-colors">
-<span class="text-tertiary text-xs font-bold tracking-widest uppercase mb-2 block">Certification</span>
-<h4 class="font-bold text-on-surface">Deep Learning Specialization</h4>
-<p class="text-sm text-on-surface-variant">DeepLearning.AI | Coursera</p>
-</div>
-<div class="bg-surface-container rounded-xl p-6 hover:bg-surface-container-highest transition-colors">
-<span class="text-tertiary text-xs font-bold tracking-widest uppercase mb-2 block">Certification</span>
-<h4 class="font-bold text-on-surface">Cloud Architecture (GCP)</h4>
-<p class="text-sm text-on-surface-variant">Google Cloud Platform</p>
-</div>
-</div>
-</div>
-</div>
-</section>
-<!-- Contact Section: Bento Grid -->
-<section class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-32">
-<div class="md:col-span-2 bg-surface-container-low rounded-[2rem] p-12 flex flex-col justify-between">
-<div>
-<h2 class="text-5xl font-headline font-bold text-on-surface mb-6 tracking-tight">Initiate <br/>Protocol.</h2>
-<p class="text-on-surface-variant text-lg max-w-md leading-relaxed mb-8">
-                        Ready to integrate new intelligence into your workflow? Let's establish a high-bandwidth connection for your next project.
+            </div>
+            <div class="md:col-span-4 flex justify-end">
+                <div class="w-full aspect-square bg-surface-container-high rounded-xl overflow-hidden relative group">
+                    <img alt="Lead Researcher Profile"
+                        class="w-full h-full object-cover group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-700"
+                        data-alt="Close-up professional portrait of a tech professional in low-key lighting with subtle blue and indigo rim light on dark background"
+                        src="https://lh3.googleusercontent.com/aida/ADBb0ujcR8Vw3Nij8ixI387cIQGgqNnQ1RHjb-MxbgUVpEYre0BF36qpg0uykrJrE224OVMUyIsMGnwTOBKkl--DjVlYLeXq9uEdRRqhVlv_ztVzh8wVuKWw2Cx4DgehKCXehkvTcIzr7tE8GKUM6nnhYM2IL31JgQgns0h5FWNIFKQBhRWy0zUlI6J7txr6KzcDwJP9mUhNFvqFwtoEyVqpeSB3oQ7PAyg__Vz8my7eHNZ5x6QBGqc1lJhSmVYtB3-ui5V-DDbohTbBLg" />
+                    <div class="absolute inset-0 bg-gradient-to-t from-background/80 to-transparent"></div>
+                </div>
+            </div>
+        </section>
+        <!-- Education Section: Tonal Stacking -->
+        <section class="mb-32 bg-surface-container-low rounded-[2rem] p-8 md:p-16">
+            <div class="grid grid-cols-1 md:grid-cols-12 gap-12">
+                <div class="md:col-span-4">
+                    <h2 class="text-4xl font-headline font-bold text-on-surface mb-4">Neural <br />Foundations</h2>
+                    <p class="text-on-surface-variant">Academic trajectory and specialized certifications.</p>
+                </div>
+                <div class="md:col-span-8 space-y-8">
+                    <div class="bg-surface-container-high p-8 rounded-2xl relative overflow-hidden group">
+                        <div class="absolute top-0 right-0 p-6 opacity-10 group-hover:opacity-20 transition-opacity">
+                            <span class="material-symbols-outlined text-8xl" data-icon="school">school</span>
+                        </div>
+                        <div class="flex flex-col md:flex-row md:items-center justify-between gap-4 mb-6">
+                            <div>
+                                <h3 class="text-2xl font-headline font-bold text-primary">Manav Rachna University</h3>
+                                <p class="text-on-surface-variant">Bachelor of Technology in Computer Science &amp;
+                                    Engineering</p>
+                            </div>
+                            <span
+                                class="px-4 py-1 bg-surface-container-highest text-secondary text-sm font-bold rounded-full self-start">2025
+                                — 2029</span>
+                        </div>
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 text-sm text-on-surface-variant">
+                            <ul class="space-y-2">
+                                <li class="flex items-center gap-2"><span
+                                        class="w-1.5 h-1.5 bg-tertiary rounded-full"></span> Specialization: Artificial
+                                    Intelligence &amp; ML</li>
+                                <li class="flex items-center gap-2"><span
+                                        class="w-1.5 h-1.5 bg-tertiary rounded-full"></span> Research Focus: Neural
+                                    Architecture Search</li>
+                            </ul>
+                            <ul class="space-y-2">
+                                <li class="flex items-center gap-2"><span
+                                        class="w-1.5 h-1.5 bg-tertiary rounded-full"></span> GPA: 9.2/10.0</li>
+                                <li class="flex items-center gap-2"><span
+                                        class="w-1.5 h-1.5 bg-tertiary rounded-full"></span> Dean's Merit List Recipient
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                        <div
+                            class="bg-surface-container rounded-xl p-6 hover:bg-surface-container-highest transition-colors">
+                            <span
+                                class="text-tertiary text-xs font-bold tracking-widest uppercase mb-2 block">Certification</span>
+                            <h4 class="font-bold text-on-surface">Deep Learning Specialization</h4>
+                            <p class="text-sm text-on-surface-variant">DeepLearning.AI | Coursera</p>
+                        </div>
+                        <div
+                            class="bg-surface-container rounded-xl p-6 hover:bg-surface-container-highest transition-colors">
+                            <span
+                                class="text-tertiary text-xs font-bold tracking-widest uppercase mb-2 block">Certification</span>
+                            <h4 class="font-bold text-on-surface">Cloud Architecture (GCP)</h4>
+                            <p class="text-sm text-on-surface-variant">Google Cloud Platform</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Contact Section: Bento Grid -->
+        <section class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-32">
+            <div class="md:col-span-2 bg-surface-container-low rounded-[2rem] p-12 flex flex-col justify-between">
+                <div>
+                    <h2 class="text-5xl font-headline font-bold text-on-surface mb-6 tracking-tight">Initiate
+                        <br />Protocol.</h2>
+                    <p class="text-on-surface-variant text-lg max-w-md leading-relaxed mb-8">
+                        Ready to integrate new intelligence into your workflow? Let's establish a high-bandwidth
+                        connection for your next project.
                     </p>
-</div>
-<div class="space-y-4">
-<div class="flex items-center justify-between p-4 bg-surface-container-lowest rounded-xl border-b-2 border-transparent focus-within:border-primary transition-all">
-<input class="bg-transparent border-none focus:ring-0 text-on-surface w-full font-body placeholder:text-outline" placeholder="Your Terminal (Email)" type="email"/>
-</div>
-<button class="w-full py-4 px-8 bg-gradient-to-r from-primary to-primary-dim text-on-primary font-bold rounded-lg hover:shadow-[0_0_30px_rgba(167,165,255,0.3)] transition-all uppercase tracking-widest text-sm">
+                </div>
+                <div class="space-y-4">
+                    <div
+                        class="flex items-center justify-between p-4 bg-surface-container-lowest rounded-xl border-b-2 border-transparent focus-within:border-primary transition-all">
+                        <input
+                            class="bg-transparent border-none focus:ring-0 text-on-surface w-full font-body placeholder:text-outline"
+                            placeholder="Your Terminal (Email)" type="email" />
+                    </div>
+                    <button
+                        class="w-full py-4 px-8 bg-gradient-to-r from-primary to-primary-dim text-on-primary font-bold rounded-lg hover:shadow-[0_0_30px_rgba(167,165,255,0.3)] transition-all uppercase tracking-widest text-sm">
                         Initiate Protocol
                     </button>
-</div>
-</div>
-<div class="flex flex-col gap-6">
-<!-- LinkedIn -->
-<a class="bg-surface-container-high rounded-[2rem] p-8 flex flex-col justify-between hover:bg-surface-variant transition-all group" href="#">
-<div class="flex justify-between items-start">
-<span class="material-symbols-outlined text-primary text-3xl" data-icon="share">share</span>
-<span class="material-symbols-outlined opacity-0 group-hover:opacity-100 transition-opacity" data-icon="north_east">north_east</span>
-</div>
-<div>
-<span class="text-outline text-xs uppercase tracking-widest font-bold block mb-1">Professional</span>
-<h3 class="text-2xl font-headline font-bold">LinkedIn</h3>
-</div>
-</a>
-<!-- GitHub -->
-<a class="bg-surface-container-high rounded-[2rem] p-8 flex flex-col justify-between hover:bg-surface-variant transition-all group" href="#">
-<div class="flex justify-between items-start">
-<span class="material-symbols-outlined text-secondary text-3xl" data-icon="terminal">terminal</span>
-<span class="material-symbols-outlined opacity-0 group-hover:opacity-100 transition-opacity" data-icon="north_east">north_east</span>
-</div>
-<div>
-<span class="text-outline text-xs uppercase tracking-widest font-bold block mb-1">Source Code</span>
-<h3 class="text-2xl font-headline font-bold">GitHub</h3>
-</div>
-</a>
-<!-- Email -->
-<a class="bg-surface-container-high rounded-[2rem] p-8 flex flex-col justify-between hover:bg-surface-variant transition-all group" href="mailto:hello@cortex.ai">
-<div class="flex justify-between items-start">
-<span class="material-symbols-outlined text-tertiary text-3xl" data-icon="alternate_email">alternate_email</span>
-<span class="material-symbols-outlined opacity-0 group-hover:opacity-100 transition-opacity" data-icon="north_east">north_east</span>
-</div>
-<div>
-<span class="text-outline text-xs uppercase tracking-widest font-bold block mb-1">Direct Sync</span>
-<h3 class="text-2xl font-headline font-bold">Email</h3>
-</div>
-</a>
-</div>
-</section>
-</main>
-<!-- BottomNavBar -->
-<div class="md:hidden">
-<nav class="fixed bottom-0 left-0 w-full flex justify-around items-center px-4 py-3 pb-safe bg-slate-900/80 backdrop-blur-lg z-50 rounded-t-3xl shadow-[0_-4px_20px_rgba(79,70,229,0.1)]">
-<a class="flex flex-col items-center justify-center text-slate-500 font-['Space_Grotesk'] text-[10px] uppercase tracking-widest" href="#">
-<span class="material-symbols-outlined mb-1" data-icon="home">home</span>
+                </div>
+            </div>
+            <div class="flex flex-col gap-6">
+                <!-- LinkedIn -->
+                <a class="bg-surface-container-high rounded-[2rem] p-8 flex flex-col justify-between hover:bg-surface-variant transition-all group"
+                    href="#">
+                    <div class="flex justify-between items-start">
+                        <span class="material-symbols-outlined text-primary text-3xl" data-icon="share">share</span>
+                        <span class="material-symbols-outlined opacity-0 group-hover:opacity-100 transition-opacity"
+                            data-icon="north_east">north_east</span>
+                    </div>
+                    <div>
+                        <span
+                            class="text-outline text-xs uppercase tracking-widest font-bold block mb-1">Professional</span>
+                        <h3 class="text-2xl font-headline font-bold">LinkedIn</h3>
+                    </div>
+                </a>
+                <!-- GitHub -->
+                <a class="bg-surface-container-high rounded-[2rem] p-8 flex flex-col justify-between hover:bg-surface-variant transition-all group"
+                    href="#">
+                    <div class="flex justify-between items-start">
+                        <span class="material-symbols-outlined text-secondary text-3xl"
+                            data-icon="terminal">terminal</span>
+                        <span class="material-symbols-outlined opacity-0 group-hover:opacity-100 transition-opacity"
+                            data-icon="north_east">north_east</span>
+                    </div>
+                    <div>
+                        <span class="text-outline text-xs uppercase tracking-widest font-bold block mb-1">Source
+                            Code</span>
+                        <h3 class="text-2xl font-headline font-bold">GitHub</h3>
+                    </div>
+                </a>
+                <!-- Email -->
+                <a class="bg-surface-container-high rounded-[2rem] p-8 flex flex-col justify-between hover:bg-surface-variant transition-all group"
+                    href="mailto:hello@cortex.ai">
+                    <div class="flex justify-between items-start">
+                        <span class="material-symbols-outlined text-tertiary text-3xl"
+                            data-icon="alternate_email">alternate_email</span>
+                        <span class="material-symbols-outlined opacity-0 group-hover:opacity-100 transition-opacity"
+                            data-icon="north_east">north_east</span>
+                    </div>
+                    <div>
+                        <span class="text-outline text-xs uppercase tracking-widest font-bold block mb-1">Direct
+                            Sync</span>
+                        <h3 class="text-2xl font-headline font-bold">Email</h3>
+                    </div>
+                </a>
+            </div>
+        </section>
+    </main>
+    <!-- BottomNavBar -->
+    <div class="md:hidden">
+        <nav
+            class="fixed bottom-0 left-0 w-full flex justify-around items-center px-4 py-3 pb-safe bg-slate-900/80 backdrop-blur-lg z-50 rounded-t-3xl shadow-[0_-4px_20px_rgba(79,70,229,0.1)]">
+            <a class="flex flex-col items-center justify-center text-slate-500 font-['Space_Grotesk'] text-[10px] uppercase tracking-widest"
+                href="#">
+                <span class="material-symbols-outlined mb-1" data-icon="home">home</span>
                 Home
             </a>
-<a class="flex flex-col items-center justify-center text-slate-500 font-['Space_Grotesk'] text-[10px] uppercase tracking-widest" href="#">
-<span class="material-symbols-outlined mb-1" data-icon="psychology">psychology</span>
+            <a class="flex flex-col items-center justify-center text-slate-500 font-['Space_Grotesk'] text-[10px] uppercase tracking-widest"
+                href="#">
+                <span class="material-symbols-outlined mb-1" data-icon="psychology">psychology</span>
                 Skills
             </a>
-<a class="flex flex-col items-center justify-center text-slate-500 font-['Space_Grotesk'] text-[10px] uppercase tracking-widest" href="#">
-<span class="material-symbols-outlined mb-1" data-icon="account_tree">account_tree</span>
+            <a class="flex flex-col items-center justify-center text-slate-500 font-['Space_Grotesk'] text-[10px] uppercase tracking-widest"
+                href="#">
+                <span class="material-symbols-outlined mb-1" data-icon="account_tree">account_tree</span>
                 Projects
             </a>
-<a class="flex flex-col items-center justify-center bg-indigo-500/20 text-indigo-300 rounded-xl px-4 py-1.5 font-['Space_Grotesk'] text-[10px] uppercase tracking-widest" href="#">
-<span class="material-symbols-outlined mb-1" data-icon="person" style="font-variation-settings: 'FILL' 1;">person</span>
+            <a class="flex flex-col items-center justify-center bg-indigo-500/20 text-indigo-300 rounded-xl px-4 py-1.5 font-['Space_Grotesk'] text-[10px] uppercase tracking-widest"
+                href="#">
+                <span class="material-symbols-outlined mb-1" data-icon="person"
+                    style="font-variation-settings: 'FILL' 1;">person</span>
                 About
             </a>
-</nav>
-</div>
-<!-- Decorative Canvas Elements -->
-<div class="fixed top-0 left-0 w-full h-full -z-10 pointer-events-none overflow-hidden">
-<div class="absolute top-[10%] left-[5%] w-96 h-96 bg-primary/5 blur-[120px] rounded-full"></div>
-<div class="absolute bottom-[20%] right-[5%] w-[32rem] h-[32rem] bg-tertiary/5 blur-[150px] rounded-full"></div>
-</div>
-</body></html>
+        </nav>
+    </div>
+    <!-- Decorative Canvas Elements -->
+    <div class="fixed top-0 left-0 w-full h-full -z-10 pointer-events-none overflow-hidden">
+        <div class="absolute top-[10%] left-[5%] w-96 h-96 bg-primary/5 blur-[120px] rounded-full"></div>
+        <div class="absolute bottom-[20%] right-[5%] w-[32rem] h-[32rem] bg-tertiary/5 blur-[150px] rounded-full"></div>
+    </div>
+</body>
+
+</html>
