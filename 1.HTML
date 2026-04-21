@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Pratham Saini | AI/ML Portfolio</title>
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;family=Manrope:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<!-- Material Symbols -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "tertiary-fixed-dim": "#ef6eff",
+                    "surface-container-high": "#141f38",
+                    "surface-dim": "#060e20",
+                    "on-surface-variant": "#a3aac4",
+                    "inverse-primary": "#4e45e4",
+                    "on-secondary-container": "#ecfaff",
+                    "tertiary": "#ec63ff",
+                    "surface-variant": "#192540",
+                    "inverse-surface": "#faf8ff",
+                    "secondary-fixed-dim": "#48d4f3",
+                    "inverse-on-surface": "#4d556b",
+                    "on-surface": "#dee5ff",
+                    "secondary-container": "#00687a",
+                    "secondary": "#53ddfc",
+                    "error-dim": "#d73357",
+                    "tertiary-dim": "#ec63ff",
+                    "surface-container-highest": "#192540",
+                    "tertiary-container": "#de4bf4",
+                    "on-error": "#490013",
+                    "secondary-dim": "#40ceed",
+                    "primary-fixed": "#9795ff",
+                    "on-error-container": "#ffb2b9",
+                    "surface-container-low": "#091328",
+                    "tertiary-fixed": "#f487ff",
+                    "surface": "#060e20",
+                    "on-secondary": "#004b58",
+                    "on-tertiary-container": "#19001e",
+                    "secondary-fixed": "#65e1ff",
+                    "surface-container": "#0f1930",
+                    "primary-fixed-dim": "#8885ff",
+                    "primary-dim": "#645efb",
+                    "on-secondary-fixed": "#003a45",
+                    "outline": "#6d758c",
+                    "error": "#ff6e84",
+                    "on-primary-container": "#14007e",
+                    "on-tertiary": "#3d0047",
+                    "surface-bright": "#1f2b49",
+                    "on-tertiary-fixed": "#300038",
+                    "on-tertiary-fixed-variant": "#660075",
+                    "on-primary": "#1c00a0",
+                    "background": "#060e20",
+                    "primary-container": "#9795ff",
+                    "on-secondary-fixed-variant": "#005969",
+                    "primary": "#a7a5ff",
+                    "outline-variant": "#40485d",
+                    "on-primary-fixed": "#000000",
+                    "on-background": "#dee5ff",
+                    "surface-tint": "#a7a5ff",
+                    "surface-container-lowest": "#000000",
+                    "on-primary-fixed-variant": "#1a0099",
+                    "error-container": "#a70138"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "fontFamily": {
+                    "headline": ["Space Grotesk"],
+                    "body": ["Manrope"],
+                    "label": ["Manrope"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+            display: inline-block;
+            vertical-align: middle;
+        }
+        body {
+            background-color: #060e20;
+            color: #dee5ff;
+            font-family: 'Manrope', sans-serif;
+            overflow-x: hidden;
+        }
+        .glass-panel {
+            background: rgba(25, 37, 64, 0.6);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+        }
+        .neural-grid {
+            background-image: radial-gradient(circle at 2px 2px, #141f38 1px, transparent 0);
+            background-size: 40px 40px;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+</head>
+<body class="bg-background text-on-background selection:bg-primary/30">
+<!-- TopAppBar -->
+<header class="fixed top-0 w-full z-50 bg-slate-950/60 backdrop-blur-xl flex justify-between items-center px-6 py-4 w-full">
+<div class="flex items-center gap-4">
+<div class="w-10 h-10 rounded-full overflow-hidden border border-primary/20">
+<img alt="Pratham Saini Profile Photo" class="w-full h-full object-cover" data-alt="professional portrait of a young male student with a focused expression, wearing a smart casual outfit, soft studio lighting with cool blue background" src="https://lh3.googleusercontent.com/aida/ADBb0ujcR8Vw3Nij8ixI387cIQGgqNnQ1RHjb-MxbgUVpEYre0BF36qpg0uykrJrE224OVMUyIsMGnwTOBKkl--DjVlYLeXq9uEdRRqhVlv_ztVzh8wVuKWw2Cx4DgehKCXehkvTcIzr7tE8GKUM6nnhYM2IL31JgQgns0h5FWNIFKQBhRWy0zUlI6J7txr6KzcDwJP9mUhNFvqFwtoEyVqpeSB3oQ7PAyg__Vz8my7eHNZ5x6QBGqc1lJhSmVYtB3-ui5V-DDbohTbBLg"/>
+</div>
+<h1 class="text-xl font-bold tracking-tighter text-slate-100 font-['Space_Grotesk']">The Neural Ledger</h1>
+</div>
+<nav class="hidden md:flex items-center gap-8">
+<a class="text-indigo-400 font-bold font-['Space_Grotesk'] tracking-tight hover:text-indigo-300 transition-colors" href="#hero">Hero</a>
+<a class="text-slate-400 font-['Space_Grotesk'] tracking-tight hover:text-indigo-300 transition-colors" href="#skills">Skills</a>
+<a class="text-slate-400 font-['Space_Grotesk'] tracking-tight hover:text-indigo-300 transition-colors" href="#projects">Projects</a>
+<a class="text-slate-400 font-['Space_Grotesk'] tracking-tight hover:text-indigo-300 transition-colors" href="#about">About</a>
+</nav>
+<div class="flex items-center gap-2">
+<div class="glass-panel px-3 py-1.5 rounded-full flex items-center gap-3 border border-outline-variant/20">
+<span class="text-xs font-bold text-primary">HI</span>
+<span class="w-[1px] h-3 bg-outline-variant/40"></span>
+<span class="text-xs font-bold text-on-surface-variant hover:text-on-surface cursor-pointer">EN</span>
+</div>
+</div>
+</header>
+<main class="neural-grid min-h-screen pt-24 pb-32">
+<!-- Hero Section -->
+<section class="container mx-auto px-6 mb-32" id="hero">
+<div class="flex flex-col md:flex-row gap-12 items-center">
+<div class="w-full md:w-2/3">
+<div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-secondary-container/30 text-secondary text-xs font-bold tracking-widest uppercase mb-6 border border-secondary/20">
+<span class="material-symbols-outlined text-sm">school</span>
+                        Manav Rachna University
+                    </div>
+<h2 class="text-5xl md:text-7xl font-headline font-bold text-on-surface leading-tight tracking-tighter mb-6">
+                        Architecting <span class="text-transparent bg-clip-text bg-gradient-to-r from-primary to-tertiary">Intelligence</span> through the Ledger.
+                    </h2>
+<p class="text-lg md:text-xl text-on-surface-variant max-w-2xl font-body leading-relaxed mb-10">
+                        B.Tech Computer Science student specializing in AI &amp; Machine Learning. Transforming complex data streams into elegant, scalable neural architectures and automated systems.
+                    </p>
+<div class="flex flex-wrap gap-4">
+<button class="px-8 py-4 bg-primary text-on-primary rounded-xl font-bold font-headline flex items-center gap-2 hover:shadow-[0_0_20px_rgba(167,165,255,0.3)] transition-all active:scale-95">
+                            Explore Ledger
+                            <span class="material-symbols-outlined">arrow_forward</span>
+</button>
+<button class="px-8 py-4 bg-surface-container-highest border border-outline-variant/30 text-secondary rounded-xl font-bold font-headline hover:bg-surface-variant transition-all active:scale-95">
+                            Download CV
+                        </button>
+</div>
+</div>
+<div class="w-full md:w-1/3 flex justify-center">
+<div class="relative group">
+<div class="absolute -inset-1 bg-gradient-to-r from-primary to-tertiary rounded-full blur opacity-25 group-hover:opacity-50 transition duration-1000"></div>
+<div class="relative w-64 h-64 md:w-80 md:h-80 rounded-full bg-surface-container-low border border-outline-variant/20 flex items-center justify-center overflow-hidden"><div class="absolute inset-0 bg-gradient-to-tr from-primary/20 to-transparent z-10"></div><img alt="Pratham Saini" class="w-full h-full object-cover grayscale-[20%] contrast-[1.1]" src="https://lh3.googleusercontent.com/aida/ADBb0ujcR8Vw3Nij8ixI387cIQGgqNnQ1RHjb-MxbgUVpEYre0BF36qpg0uykrJrE224OVMUyIsMGnwTOBKkl--DjVlYLeXq9uEdRRqhVlv_ztVzh8wVuKWw2Cx4DgehKCXehkvTcIzr7tE8GKUM6nnhYM2IL31JgQgns0h5FWNIFKQBhRWy0zUlI6J7txr6KzcDwJP9mUhNFvqFwtoEyVqpeSB3oQ7PAyg__Vz8my7eHNZ5x6QBGqc1lJhSmVYtB3-ui5V-DDbohTbBLg"/></div>
+</div>
+</div>
+</div>
+</section>
+<!-- Skills Section - Bento Grid Style -->
+<section class="container mx-auto px-6 mb-32" id="skills">
+<div class="flex flex-col gap-4 mb-12">
+<h3 class="text-3xl font-headline font-bold text-on-surface">Cognitive Stack</h3>
+<div class="h-1 w-20 bg-primary rounded-full"></div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+<!-- Core Languages -->
+<div class="md:col-span-2 bg-surface-container-low rounded-3xl p-8 border border-outline-variant/10">
+<h4 class="text-xl font-headline font-semibold text-secondary mb-8 flex items-center gap-2">
+<span class="material-symbols-outlined">terminal</span>
+                        Core Languages
+                    </h4>
+<div class="flex flex-wrap gap-4">
+<div class="px-6 py-4 bg-surface-container-high rounded-2xl flex flex-col gap-2 hover:border-primary/40 border border-transparent transition-all">
+<span class="text-on-surface-variant text-xs font-bold uppercase tracking-widest">Programming</span>
+<span class="text-2xl font-bold text-on-surface">Python</span>
+</div>
+<div class="px-6 py-4 bg-surface-container-high rounded-2xl flex flex-col gap-2 hover:border-primary/40 border border-transparent transition-all">
+<span class="text-on-surface-variant text-xs font-bold uppercase tracking-widest">Systems</span>
+<span class="text-2xl font-bold text-on-surface">C++ / C</span>
+</div>
+<div class="px-6 py-4 bg-surface-container-high rounded-2xl flex flex-col gap-2 hover:border-primary/40 border border-transparent transition-all">
+<span class="text-on-surface-variant text-xs font-bold uppercase tracking-widest">Frontend</span>
+<span class="text-2xl font-bold text-on-surface">JS / HTML</span>
+</div>
+</div>
+</div>
+<!-- AI Tools -->
+<div class="bg-surface-container-low rounded-3xl p-8 border border-outline-variant/10">
+<h4 class="text-xl font-headline font-semibold text-tertiary mb-8 flex items-center gap-2">
+<span class="material-symbols-outlined">psychology</span>
+                        AI Orchestration
+                    </h4>
+<div class="flex flex-wrap gap-2">
+<span class="px-4 py-2 bg-secondary-container/20 text-on-secondary-container border border-secondary-container rounded-full text-sm font-medium">Gamma</span>
+<span class="px-4 py-2 bg-secondary-container/20 text-on-secondary-container border border-secondary-container rounded-full text-sm font-medium">Stitch</span>
+<span class="px-4 py-2 bg-secondary-container/20 text-on-secondary-container border border-secondary-container rounded-full text-sm font-medium">Antigravity</span>
+<span class="px-4 py-2 bg-secondary-container/20 text-on-secondary-container border border-secondary-container rounded-full text-sm font-medium">Kiro</span>
+<span class="px-4 py-2 bg-secondary-container/20 text-on-secondary-container border border-secondary-container rounded-full text-sm font-medium">Copilot</span>
+</div>
+</div>
+<!-- Dev Utilities -->
+<div class="bg-surface-container-low rounded-3xl p-8 border border-outline-variant/10 flex flex-col justify-between">
+<div>
+<h4 class="text-xl font-headline font-semibold text-primary mb-6 flex items-center gap-2">
+<span class="material-symbols-outlined">settings_ethernet</span>
+                            DevOps &amp; Utils
+                        </h4>
+<ul class="space-y-4">
+<li class="flex items-center gap-3 text-on-surface-variant">
+<span class="material-symbols-outlined text-sm text-primary">data_object</span>
+                                Git Version Control
+                            </li>
+<li class="flex items-center gap-3 text-on-surface-variant">
+<span class="material-symbols-outlined text-sm text-primary">input</span>
+                                Curl Request Piping
+                            </li>
+</ul>
+</div>
+</div>
+<!-- Technical Focus -->
+<div class="md:col-span-2 bg-gradient-to-br from-surface-container-high to-surface-container-low rounded-3xl p-8 border border-outline-variant/10 overflow-hidden relative">
+<div class="relative z-10">
+<h4 class="text-2xl font-headline font-bold text-on-surface mb-4">Neural Specialization</h4>
+<p class="text-on-surface-variant mb-6 max-w-md">Focused on building autonomous agents and deterministic systems within the Python ecosystem at Manav Rachna University.</p>
+<div class="flex gap-4">
+<div class="flex items-center gap-2 text-tertiary font-bold">
+<span class="material-symbols-outlined">auto_awesome</span>
+                                ML Pipeline Optimization
+                            </div>
+</div>
+</div>
+<!-- Decorative element -->
+<div class="absolute -right-10 -bottom-10 opacity-10">
+<span class="material-symbols-outlined text-[200px]" style="font-variation-settings: 'FILL' 1;">schema</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Projects Section -->
+<section class="container mx-auto px-6 mb-32" id="projects">
+<div class="flex flex-col gap-4 mb-12">
+<h3 class="text-3xl font-headline font-bold text-on-surface">The Projects Ledger</h3>
+<div class="h-1 w-20 bg-tertiary rounded-full"></div>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+<div class="order-2 lg:order-1">
+<div class="bg-surface-container-high rounded-3xl p-8 md:p-12 border border-outline-variant/10 shadow-2xl relative overflow-hidden">
+<div class="absolute top-0 right-0 p-6 opacity-10">
+<span class="material-symbols-outlined text-6xl">account_balance</span>
+</div>
+<span class="px-4 py-1.5 rounded-full bg-tertiary/10 text-tertiary text-xs font-bold uppercase tracking-widest border border-tertiary/20 mb-6 inline-block">Featured System</span>
+<h4 class="text-4xl font-headline font-bold text-on-surface mb-6">ATM Machine Terminal</h4>
+<p class="text-lg text-on-surface-variant leading-relaxed mb-8">
+                            A high-fidelity simulation of an Automated Teller Machine implemented in Python. This project focuses on transaction logic, state management, and secure user data handling, mimicking the ledger systems found in modern financial infrastructure.
+                        </p>
+<div class="flex flex-wrap gap-3 mb-10">
+<span class="flex items-center gap-2 px-3 py-1 bg-surface-variant rounded-lg text-xs font-semibold text-secondary">
+<span class="material-symbols-outlined text-sm">code</span>
+                                Python 3.x
+                            </span>
+<span class="flex items-center gap-2 px-3 py-1 bg-surface-variant rounded-lg text-xs font-semibold text-secondary">
+<span class="material-symbols-outlined text-sm">security</span>
+                                Pin Validation
+                            </span>
+<span class="flex items-center gap-2 px-3 py-1 bg-surface-variant rounded-lg text-xs font-semibold text-secondary">
+<span class="material-symbols-outlined text-sm">database</span>
+                                Flat-file Ledger
+                            </span>
+</div>
+<a class="inline-flex items-center gap-3 text-primary font-bold hover:gap-5 transition-all" href="#">
+                            View Repository
+                            <span class="material-symbols-outlined">open_in_new</span>
+</a>
+</div>
+</div>
+<div class="order-1 lg:order-2 rounded-3xl overflow-hidden shadow-2xl border border-outline-variant/10">
+<img alt="ATM Machine Terminal Preview" class="w-full h-full object-cover aspect-video hover:scale-105 transition-transform duration-700" data-alt="cinematic shot of a computer screen displaying clean Python code for a banking application with glowing syntax highlighting in a dark room" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDY1bsvf2zYVzXDuXrWp4Rbqeua3LwKACjiEFoqNn-G9fyFkZO9oYob12hDKMh19-2Nr2v9nLeqMppU3nEC5GNE9LM6rEjre48ELruNz4b7D6DqvVeCdzTL9oYwaRyoQr0A2asFnzCbMZWc5R0sEbUG3tm--JloyfaSTPAqVJMyhmdYSgHNSdXcw1W89CE-fiI2tBSo9Gk4aONO_BGpl3Any5keYcjLw13x9honqnBfRZxY0G4UzBAq233hDfVAeADRiTZbBVPOVHE"/>
+</div>
+</div>
+</section>
+<!-- About / Contact CTA -->
+<section class="container mx-auto px-6 mb-32" id="contact">
+<div class="flex flex-col gap-4 mb-12">
+<h3 class="text-3xl font-headline font-bold text-on-surface">Contact Registry</h3>
+<div class="h-1 w-20 bg-primary rounded-full"></div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+<div class="bg-surface-container-low rounded-3xl p-8 border border-outline-variant/10 hover:border-primary/40 transition-all">
+<div class="flex items-center gap-4 mb-4">
+<span class="material-symbols-outlined text-primary text-3xl">mail</span>
+<h4 class="text-xl font-headline font-semibold text-on-surface">Email</h4>
+</div>
+<a class="text-on-surface-variant hover:text-primary transition-colors break-all" href="mailto:prathamsaini2007@gmail.com">prathamsaini2007@gmail.com</a>
+</div>
+<div class="bg-surface-container-low rounded-3xl p-8 border border-outline-variant/10 hover:border-primary/40 transition-all">
+<div class="flex items-center gap-4 mb-4">
+<span class="material-symbols-outlined text-secondary text-3xl">call</span>
+<h4 class="text-xl font-headline font-semibold text-on-surface">Phone</h4>
+</div>
+<a class="text-on-surface-variant hover:text-secondary transition-colors" href="tel:8527494727">8527494727</a>
+</div>
+<div class="bg-surface-container-low rounded-3xl p-8 border border-outline-variant/10 hover:border-primary/40 transition-all">
+<div class="flex items-center gap-4 mb-4">
+<span class="material-symbols-outlined text-tertiary text-3xl">hub</span>
+<h4 class="text-xl font-headline font-semibold text-on-surface">LinkedIn</h4>
+</div>
+<a class="text-on-surface-variant hover:text-tertiary transition-colors" href="https://www.linkedin.com/in/pratham-saini-890518366" target="_blank">View Professional Profile</a>
+</div>
+</div>
+</section><section class="container mx-auto px-6 mb-32" id="about">
+<div class="bg-surface-container-lowest rounded-[40px] p-12 md:p-24 text-center border border-outline-variant/10 relative overflow-hidden">
+<div class="absolute inset-0 bg-gradient-to-b from-primary/5 to-transparent"></div>
+<div class="relative z-10 max-w-3xl mx-auto">
+<h3 class="text-4xl md:text-5xl font-headline font-bold text-on-surface mb-8">Ready to sync with the Neural Ledger?</h3>
+<p class="text-xl text-on-surface-variant mb-12">Currently open to internship opportunities and collaborative AI/ML research projects.</p>
+<div class="flex flex-col md:flex-row justify-center gap-6">
+<a class="px-10 py-5 bg-gradient-to-r from-primary to-primary-dim text-on-primary rounded-2xl font-bold text-lg hover:shadow-[0_0_30px_rgba(167,165,255,0.4)] transition-all" href="mailto:prathamsaini2007@gmail.com">Initiate Protocol</a>
+<div class="flex items-center justify-center gap-6 px-8 py-5 text-on-surface-variant border-b md:border-b-0 md:border-l border-outline-variant/30"><a href="mailto:prathamsaini2007@gmail.com" title="Email"><span class="material-symbols-outlined cursor-pointer hover:text-primary transition-colors">alternate_email</span></a>
+<a href="https://www.linkedin.com/in/pratham-saini-890518366" target="_blank" title="LinkedIn"><span class="material-symbols-outlined cursor-pointer hover:text-primary transition-colors">link</span></a>
+<a href="tel:8527494727" title="Phone"><span class="material-symbols-outlined cursor-pointer hover:text-primary transition-colors">call</span></a></div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- BottomNavBar (Mobile Only) -->
+<footer class="fixed bottom-0 left-0 w-full flex justify-around items-center px-4 py-3 pb-safe bg-slate-950/80 backdrop-blur-lg z-50 rounded-t-lg md:hidden shadow-2xl shadow-indigo-500/10">
+<a class="flex flex-col items-center justify-center bg-indigo-500/10 text-indigo-300 rounded-xl px-3 py-1 scale-95 active:scale-90 transition-transform" href="#hero">
+<span class="material-symbols-outlined" data-icon="terminal">terminal</span>
+<span class="font-['Manrope'] text-[10px] uppercase tracking-widest mt-1">Hero</span>
+</a>
+<a class="flex flex-col items-center justify-center text-slate-500 hover:bg-slate-800/50 transition-all scale-95 active:scale-90 transition-transform" href="#skills">
+<span class="material-symbols-outlined" data-icon="psychology">psychology</span>
+<span class="font-['Manrope'] text-[10px] uppercase tracking-widest mt-1">Skills</span>
+</a>
+<a class="flex flex-col items-center justify-center text-slate-500 hover:bg-slate-800/50 transition-all scale-95 active:scale-90 transition-transform" href="#projects">
+<span class="material-symbols-outlined" data-icon="code_blocks">code_blocks</span>
+<span class="font-['Manrope'] text-[10px] uppercase tracking-widest mt-1">Projects</span>
+</a>
+<a class="flex flex-col items-center justify-center text-slate-500 hover:bg-slate-800/50 transition-all scale-95 active:scale-90 transition-transform" href="#about">
+<span class="material-symbols-outlined" data-icon="person">person</span>
+<span class="font-['Manrope'] text-[10px] uppercase tracking-widest mt-1">About</span>
+</a>
+</footer>
+</body></html>
